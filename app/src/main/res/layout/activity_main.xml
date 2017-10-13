@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhanggang.greendaodemo.MainActivity">
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名："/>
+    <EditText
+        android:id="@+id/ed_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入性别："/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/charu"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="插入"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/shanchu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:onClick="onClick"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/xiugai"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="修改"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/ed_newname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入修改的姓名："/>
+    <EditText
+        android:id="@+id/ed_newsex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入修改的性别："/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
